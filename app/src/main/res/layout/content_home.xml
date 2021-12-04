@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home2">
+
+    <RelativeLayout
+        android:id="@+id/rellayHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="4dp"
+        android:layout_marginLeft="4dp">
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearHome1"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearHome2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:hint="search"
+                    android:gravity="center"
+                    android:background="@drawable/et_bg"
+                    >
+
+                </EditText>
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/ic_search"
+                    android:layout_marginLeft="0dp">
+
+                </Button>
+
+
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/ic_shopping_cart"
+                    android:layout_marginLeft="25dp">
+
+                </Button>
+
+            </LinearLayout>
+
+            <RelativeLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="100dp"
+                >
+
+                <ImageButton
+                    android:id="@+id/plants"
+                    android:layout_width="160dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="80dp"
+                    android:layout_margin="16dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/img_btn"
+                    >
+
+                </ImageButton>
+
+                <TextView
+                    android:id="@+id/plants2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_below="@+id/plants"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Vegetables/Fruits"
+                    android:textSize="20sp">
+
+                </TextView>
+
+
+                <ImageButton
+                    android:id="@+id/animals"
+                    android:layout_width="160dp"
+                    android:layout_height="80dp"
+                    android:layout_below="@+id/plants2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/img_btn2"
+                    android:outlineSpotShadowColor="@color/cardview_dark_background">
+
+                </ImageButton>
+
+                <TextView
+                    android:layout_below="@+id/animals"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"
+                    android:textSize="20sp"
+                    android:text="Animal Products"
+                    android:layout_centerHorizontal="true">
+
+                </TextView>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+
+            >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/et_bg"
+                android:text="Home"
+                android:textAllCaps="false">
+
+            </Button>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/et_bg"
+                android:text="Sell"
+                android:layout_marginLeft="100dp"
+                android:textAllCaps="false">
+
+            </Button>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Favourites"
+                android:layout_marginRight="100dp"
+                android:textAllCaps="false"
+                android:background="@drawable/et_bg"
+                android:layout_alignParentRight="true">
+
+            </Button>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:textAllCaps="false"
+                android:background="@drawable/et_bg"
+                android:layout_alignParentRight="true">
+
+            </Button>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

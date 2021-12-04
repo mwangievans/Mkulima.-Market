@@ -1,0 +1,48 @@
+
+{
+  "project_info": {
+    "project_number": "715624245665",
+    "project_id": "mkulimarket",
+    "storage_bucket": "mkulimarket.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:715624245665:android:b1e93781e9668a482f83e0",
+        "android_client_info": {
+          "package_name": "com.example.mkulima"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "715624245665-3ibeotm5nafji4cg8eqcp16ieu4livpt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mkulima",
+            "certificate_hash": "3db0fbdd7adfe0aff5e21ef33c34a3ff98d95bcc"
+          }
+        },
+        {
+          "client_id": "715624245665-7s8btnv5kkv1mta6egm3so6tht9lft9t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAoS7oVg5AfM7GUeRaLxPtdOk0RcxEQ7rw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "715624245665-7s8btnv5kkv1mta6egm3so6tht9lft9t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
