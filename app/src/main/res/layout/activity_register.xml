@@ -11,9 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="40dp"
-
-        >
+        android:layout_marginTop="40dp">
 
         <ImageView
             android:id="@+id/logoR"
@@ -27,14 +25,14 @@
 
         <TextView
             android:id="@+id/register"
-            android:layout_below="@+id/logoR"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/logoR"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif-black"
             android:text="Register Here"
             android:textColor="#000000"
-            android:fontFamily="sans-serif-black"
-            android:textSize="40sp"
-            android:layout_centerHorizontal="true">
+            android:textSize="40sp">
 
         </TextView>
 
