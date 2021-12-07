@@ -1,8 +1,7 @@
 package com.example.mkulima.Prevalent;
 
-import com.example.mkulima.Model.Users;
+import com.example.mkulima.Model.User;
 
-public class Prevalent
-{
-    private static Users currentOnlineUser;
+public class Prevalent {
+    private static User currentOnlineUser;
 }

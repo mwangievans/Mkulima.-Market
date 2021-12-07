@@ -1,24 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Home2">
+    tools:context=".activities.landing.Landing">
 
     <RelativeLayout
         android:id="@+id/rellayHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginRight="4dp"
-        android:layout_marginLeft="4dp">
-
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp">
 
 
         <LinearLayout
+            android:id="@+id/linearHome1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/linearHome1"
             android:layout_marginTop="40dp"
             android:orientation="vertical">
 
@@ -31,30 +29,27 @@
                 <EditText
                     android:layout_width="300dp"
                     android:layout_height="40dp"
-                    android:hint="search"
-                    android:gravity="center"
                     android:background="@drawable/et_bg"
-                    >
+                    android:gravity="center"
+                    android:hint="search">
 
                 </EditText>
 
                 <Button
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:background="@drawable/ic_search"
-                    android:layout_marginLeft="0dp">
+                    android:layout_marginLeft="0dp"
+                    android:background="@drawable/ic_search">
 
                 </Button>
-
 
 
                 <Button
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:background="@drawable/ic_shopping_cart"
-                    android:layout_marginLeft="25dp">
+                    android:layout_marginLeft="25dp"
+                    android:background="@drawable/ic_shopping_cart" />
 
-                </Button>
 
             </LinearLayout>
 
@@ -63,32 +58,27 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="100dp"
-                >
+                android:layout_marginTop="100dp">
 
                 <ImageButton
                     android:id="@+id/plants"
                     android:layout_width="160dp"
-                    android:layout_centerHorizontal="true"
                     android:layout_height="80dp"
+                    android:layout_centerHorizontal="true"
                     android:layout_margin="16dp"
                     android:layout_marginTop="40dp"
-                    android:background="@drawable/img_btn"
-                    >
+                    android:background="@drawable/img_btn" />
 
-                </ImageButton>
 
                 <TextView
                     android:id="@+id/plants2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
                     android:layout_below="@+id/plants"
+                    android:layout_centerInParent="true"
                     android:fontFamily="sans-serif-black"
                     android:text="Vegetables/Fruits"
-                    android:textSize="20sp">
-
-                </TextView>
+                    android:textSize="20sp" />
 
 
                 <ImageButton
@@ -104,20 +94,18 @@
                     android:layout_marginRight="16dp"
                     android:layout_marginBottom="16dp"
                     android:background="@drawable/img_btn2"
-                    android:outlineSpotShadowColor="@color/cardview_dark_background">
+                    android:outlineSpotShadowColor="@color/cardview_dark_background" />
 
-                </ImageButton>
 
                 <TextView
-                    android:layout_below="@+id/animals"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_below="@+id/animals"
+                    android:layout_centerHorizontal="true"
                     android:fontFamily="sans-serif-black"
-                    android:textSize="20sp"
                     android:text="Animal Products"
-                    android:layout_centerHorizontal="true">
+                    android:textSize="20sp" />
 
-                </TextView>
 
             </RelativeLayout>
 
@@ -127,9 +115,7 @@
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-
-            >
+            android:layout_alignParentBottom="true">
 
             <Button
                 android:layout_width="wrap_content"
@@ -144,34 +130,30 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
                 android:background="@drawable/et_bg"
                 android:text="Sell"
-                android:layout_marginLeft="100dp"
-                android:textAllCaps="false">
+                android:textAllCaps="false" />
 
-            </Button>
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Favourites"
+                android:layout_alignParentRight="true"
                 android:layout_marginRight="100dp"
-                android:textAllCaps="false"
                 android:background="@drawable/et_bg"
-                android:layout_alignParentRight="true">
-
-            </Button>
+                android:text="Favourites"
+                android:textAllCaps="false" />
 
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Profile"
-                android:textAllCaps="false"
+                android:layout_alignParentRight="true"
                 android:background="@drawable/et_bg"
-                android:layout_alignParentRight="true">
+                android:text="Profile"
+                android:textAllCaps="false" />
 
-            </Button>
 
         </RelativeLayout>
 

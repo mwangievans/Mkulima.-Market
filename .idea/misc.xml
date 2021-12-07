@@ -16,10 +16,32 @@
         <entry key="..\:/Users/asus/AndroidStudioProjects/Mkulima/app/src/main/res/layout/activity_register.xml" value="0.25" />
         <entry key="..\:/Users/asus/AndroidStudioProjects/Mkulima/app/src/main/res/layout/content_home.xml" value="0.18" />
         <entry key="..\:/Users/asus/AndroidStudioProjects/Mkulima/app/src/main/res/layout/fragment_second.xml" value="0.16" />
+        <entry key="app/src/main/res/drawable/like.xml" value="0.3776041666666667" />
+        <entry key="app/src/main/res/layout/activity_credentials.xml" value="0.3614583333333333" />
+        <entry key="app/src/main/res/layout/activity_detail.xml" value="0.3614583333333333" />
+        <entry key="app/src/main/res/layout/activity_greens_page.xml" value="0.3614583333333333" />
+        <entry key="app/src/main/res/layout/activity_items.xml" value="0.3614583333333333" />
+        <entry key="app/src/main/res/layout/activity_log_in.xml" value="0.3614583333333333" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.3614583333333333" />
+        <entry key="app/src/main/res/layout/activity_register.xml" value="0.3614583333333333" />
+        <entry key="app/src/main/res/layout/content_home.xml" value="0.3614583333333333" />
+        <entry key="app/src/main/res/layout/fragment_category.xml" value="0.3614583333333333" />
+        <entry key="app/src/main/res/layout/fragment_first.xml" value="0.3614583333333333" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.3614583333333333" />
+        <entry key="app/src/main/res/layout/fragment_login.xml" value="0.3614583333333333" />
+        <entry key="app/src/main/res/layout/fragment_meat.xml" value="0.3614583333333333" />
+        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.3614583333333333" />
+        <entry key="app/src/main/res/layout/fragment_second.xml" value="0.3463541666666667" />
+        <entry key="app/src/main/res/layout/fragment_sign_up.xml" value="0.3614583333333333" />
+        <entry key="app/src/main/res/layout/fragment_veges.xml" value="0.3614583333333333" />
+        <entry key="app/src/main/res/layout/product_item.xml" value="0.3614583333333333" />
+        <entry key="app/src/main/res/layout/shopping_item.xml" value="0.3614583333333333" />
+        <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.3614583333333333" />
+        <entry key="app/src/main/res/menu/menu.xml" value="0.3614583333333333" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8 (1)" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
