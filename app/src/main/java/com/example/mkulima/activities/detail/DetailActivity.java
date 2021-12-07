@@ -1,14 +1,16 @@
-package com.example.mkulima;
+package com.example.mkulima.activities.detail;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class GreensPage extends AppCompatActivity {
+import com.example.mkulima.R;
+
+public class DetailActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_greens_page);
+        setContentView(R.layout.activity_detail);
     }
 }
