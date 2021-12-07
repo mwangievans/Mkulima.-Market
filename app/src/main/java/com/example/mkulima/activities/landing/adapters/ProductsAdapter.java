@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.mkulima.Model.Product;
 import com.example.mkulima.R;
 import com.example.mkulima.databinding.ShoppingItemBinding;
+import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
@@ -68,7 +69,7 @@ public class ProductsAdapter extends RecyclerView.Adapter<ProductsAdapter.Produc
             binding.titleTv.setText(product.getTitle());
             binding.descriptionTv.setText(product.getDescription());
             binding.priceTv.setText(product.getPrice());
-            Picasso.load(product.getImageUrl()).into(binding.shoppingProductItem);
+            Picasso.get().load(product.getImageUrl()).into(binding.shoppingProductItem);
         }
     }
 }

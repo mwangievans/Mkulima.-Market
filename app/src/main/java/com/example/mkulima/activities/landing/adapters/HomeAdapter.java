@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.mkulima.Model.Product;
 import com.example.mkulima.R;
 import com.example.mkulima.databinding.ProductItemBinding;
+import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
