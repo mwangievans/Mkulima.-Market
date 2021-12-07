@@ -24,8 +24,6 @@
     <style name="Theme.Mkulima.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
     <style name="Theme.Material" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>

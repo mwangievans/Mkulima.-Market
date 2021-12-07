@@ -3,14 +3,19 @@ package com.example.mkulima.activities.landing.fragments.catfrags;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.SearchView;
 import androidx.fragment.app.Fragment;
 
 import com.example.mkulima.Model.Product;
+import com.example.mkulima.R;
 import com.example.mkulima.activities.detail.DetailActivity;
 import com.example.mkulima.activities.landing.adapters.ProductsAdapter;
 import com.example.mkulima.databinding.FragmentMeatBinding;
@@ -25,7 +30,7 @@ import java.util.List;
 public class MeatFragment extends Fragment {
     private FragmentMeatBinding binding;
     List<Product> meat = new ArrayList<>();
-
+    List<Product> searchList = new ArrayList<>();
 
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
@@ -59,6 +64,7 @@ public class MeatFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         binding = FragmentMeatBinding.inflate(inflater, container, false);
+        setHasOptionsMenu(true);
         return binding.getRoot();
     }
 
@@ -68,6 +74,32 @@ public class MeatFragment extends Fragment {
         ProductsAdapter adapter = new ProductsAdapter(requireContext(),meat);
         binding.animalProductsRecycler.setAdapter(adapter);
         adapter.setOnItemClickListener(position -> startActivity(new Intent(requireContext(), DetailActivity.class).putExtra("product_extra",meat.get(position))));
+    }
+    @Override
+    public void onCreateOptionsMenu(@NonNull Menu menu, @NonNull MenuInflater inflater) {
+        super.onCreateOptionsMenu(menu, inflater);
+        inflater.inflate(R.menu.category_menu,menu);
+        MenuItem item = menu.findItem(R.id.search);
+        SearchView searchView = (SearchView) item.getActionView();
+        searchView.setQueryHint("Search....");
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                for (Product product:meat){
+                    if (product.getTitle().contains(newText) || product.getDescription().contains(newText) || product.getPrice().contains(newText)){
+                        searchList.add(product);
+                        ProductsAdapter search = new ProductsAdapter(requireContext(),searchList);
+                        binding.animalProductsRecycler.setAdapter(search);
+                    }
+                }
+                return true;
+            }
+        });
     }
 
     private void getMeat() {

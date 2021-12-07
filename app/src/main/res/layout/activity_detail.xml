@@ -7,7 +7,7 @@
     tools:context=".activities.detail.DetailActivity">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/product_image_detail"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:src="@drawable/img_btn2"
@@ -27,36 +27,38 @@
         android:padding="5dp"
         android:textSize="20sp"
         android:textStyle="bold|italic"
-        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/product_image_detail"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/imageView2"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintStart_toStartOf="@+id/product_image_detail"
+        app:layout_constraintTop_toBottomOf="@+id/product_image_detail" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/product_description_detail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/description"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
-        app:layout_constraintEnd_toEndOf="@+id/imageView2"
-        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/product_image_detail"
+        app:layout_constraintStart_toStartOf="@+id/product_image_detail"
         app:layout_constraintTop_toBottomOf="@+id/title_tv_detail" />
 
     <TextView
         android:id="@+id/amount_tv"
         android:layout_width="50dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="52dp"
         android:gravity="center"
         android:text="100"
         android:textSize="20sp"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
-        tools:layout_editor_absoluteX="89dp" />
+        app:layout_constraintEnd_toEndOf="@+id/product_description_detail"
+        app:layout_constraintHorizontal_bias="0.205"
+        app:layout_constraintStart_toStartOf="@+id/product_description_detail"
+        app:layout_constraintTop_toBottomOf="@+id/product_description_detail" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/add"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginEnd="5dp"
@@ -67,7 +69,7 @@
         android:layout_marginRight="5dp" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/reduce"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginStart="5dp"
@@ -78,41 +80,50 @@
         android:layout_marginLeft="5dp" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/add_to_cart_btn"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:text="Add to cart"
         android:drawableEnd="@drawable/add_shopping_cart"
-        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="@+id/product_description_detail"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textView3"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/product_description_detail"
+        app:layout_constraintTop_toBottomOf="@+id/amount_tv"
         android:drawableRight="@drawable/add_shopping_cart" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/view_cart_btn"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:text="View Cart"
         android:drawableEnd="@drawable/shopping_cart"
         android:layout_marginTop="20dp"
-        app:layout_constraintEnd_toEndOf="@+id/button2"
-        app:layout_constraintStart_toStartOf="@+id/button2"
-        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="@+id/add_to_cart_btn"
+        app:layout_constraintStart_toStartOf="@+id/add_to_cart_btn"
+        app:layout_constraintTop_toBottomOf="@+id/add_to_cart_btn"
         android:drawableRight="@drawable/shopping_cart" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/check_out_btn"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:text="Checkout"
         android:drawableEnd="@drawable/shopping_cart_checkout"
-        app:layout_constraintBottom_toBottomOf="@+id/button3"
-        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintBottom_toBottomOf="@+id/view_cart_btn"
+        app:layout_constraintEnd_toEndOf="@+id/product_description_detail"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/textView3"
-        app:layout_constraintTop_toTopOf="@+id/button3"
+        app:layout_constraintStart_toStartOf="@+id/product_description_detail"
+        app:layout_constraintTop_toTopOf="@+id/view_cart_btn"
         app:layout_constraintVertical_bias="0.0"
         android:drawableRight="@drawable/shopping_cart_checkout" />
+
+    <TextView
+        android:id="@+id/price_tv_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price:1000"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/product_description_detail"
+        app:layout_constraintTop_toBottomOf="@+id/product_description_detail" />
 </androidx.constraintlayout.widget.ConstraintLayout>

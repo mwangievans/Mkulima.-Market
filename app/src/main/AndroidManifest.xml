@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.mkulima" >
+    package="com.example.mkulima">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -11,7 +11,13 @@
         android:label="MkuliMarket"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Material" >
+        android:theme="@style/Theme.Material">
+        <activity
+            android:name=".activities.post.PostActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.cart.CartActivity"
+            android:exported="false" />
         <activity
             android:name=".activities.detail.DetailActivity"
             android:exported="false" />
@@ -23,7 +29,7 @@
         <activity android:name=".activities.credentials.CredentialsActivity" />
         <activity
             android:name=".activities.lost.Login"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
